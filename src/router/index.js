@@ -11,8 +11,14 @@ const routes = [
   },
   {
     path: "/home",
-    nome: "Home",
+    nome: "home",
     component: () => import("@/views/Home"),
+    children: [],
+  },
+  {
+    path: "/registerItems",
+    nome: "registerItems",
+    component: () => import("@/views/RegisterItems"),
   },
   {
     path: "/register",
